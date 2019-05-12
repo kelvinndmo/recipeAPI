@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./app:/app
+      # map the app directory in our project to the app directory in the docker image
+    command: >
+      sh -c "python manage.pu runserver 0.0.0.0:8000"
+      #run django dev server on port 8000.
