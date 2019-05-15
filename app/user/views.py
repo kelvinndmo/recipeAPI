@@ -13,4 +13,4 @@ class CreateTokenView(ObtainAuthToken):
     """create new Auth token for user"""
     serializer_class = AuthTokenSerializer
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
-    # render class sets the renderer so that we can view the endpoint in browser
+    # render class sets the renderer so that we can view the endpoint
