@@ -80,11 +80,6 @@ class PublicUserApiTests(TestCase):
 
     def test_create_token_invalid_credential(self):
         """test that token is not created if invalid credential are given"""
-        create_user = ({
-            'email': 'ndemo@gmail.com',
-            'username': 'onkundi254',
-            'password': 'aubameyang'
-        })
 
         payload = {
             'email': 'ndemo@gmail.com',
